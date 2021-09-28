@@ -7,7 +7,7 @@ const LoginScreen = () =>{
          <div className='login__container'>
             <h2>Video Search</h2>
             <img
-               src='http://pngimg.com/uploads/youtube/youtube_PNG2.png'
+               src='https://images-platform.99static.com/TnAXZVaI2N-HCMYBcODs6w4wmdQ=/500x500/top/smart/99designs-contests-attachments/56/56125/attachment_56125388'
                alt=''
             />
             <button>Login Here</button>

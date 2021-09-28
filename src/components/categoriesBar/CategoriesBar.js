@@ -4,8 +4,6 @@ import './_categoriesBar.scss';
 import { useDispatch } from 'react-redux';
 import { getVideosByCategory } from '../../redux/actions/videos.action';
 
-
-
 const keywords = [
    'All',
    'Music',

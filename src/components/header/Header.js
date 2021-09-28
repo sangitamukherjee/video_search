@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import './_header.scss';
 
+
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { BiLogInCircle } from "react-icons/bi";
+import { MdNotifications, MdApps } from 'react-icons/md'
 
 import { useHistory } from 'react-router-dom';
 
 const Header = ({handleToggleSidebar}) => {
   const [input, setInput] = useState('')
   const history = useHistory()
+
   const handleSubmit = (e) => {
     e.preventDefault()
     history.push(`search/${input}`)
   }
-
 
   return(
     <div className="header">
@@ -22,7 +24,7 @@ const Header = ({handleToggleSidebar}) => {
       onClick={() => handleToggleSidebar()}
     />
     <img
-      src="http://pngimg.com/uploads/youtube/youtube_PNG2.png"
+      src="https://images-platform.99static.com/TnAXZVaI2N-HCMYBcODs6w4wmdQ=/500x500/top/smart/99designs-contests-attachments/56/56125/attachment_56125388"
       alt=''
       className="header__logo"
       />
@@ -37,9 +39,17 @@ const Header = ({handleToggleSidebar}) => {
       <AiOutlineSearch size={22}/>
     </button>
   </form>
-  <button type="submit">
+
+  <div className='header__icons'>
+    <MdNotifications size={28} />
+    <MdApps size={28} />
+    <button type="submit">
     <BiLogInCircle size={22}/>
-  </button>
+    </button>
+  </div>
+
+
+
 
 </div>
   )
