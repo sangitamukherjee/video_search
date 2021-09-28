@@ -1,6 +1,6 @@
 {
   "name": "video_search",
-  "homepage": "https://sangitamukherjee.github.io/video_search/",
+  "homepage": "http://sangitamukherjee.github.io/project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,6 @@
     "react-bootstrap": "^1.6.3",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
-    "react-lazy-load-image-component": "^1.5.1",
     "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
@@ -26,9 +25,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
