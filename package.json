@@ -1,6 +1,6 @@
 {
   "name": "video_search",
-  "homepage": "http://sangitamukherjee.github.io/project",
+  "homepage": "http://sangitamukherjee.github.io/video_search",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
