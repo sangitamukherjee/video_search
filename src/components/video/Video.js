@@ -60,7 +60,6 @@ const handleVideoClick  = () => {
       <span>{moment(publishedAt).fromNow()}</span>
       </div>
       <div className="video_channel">
-
         <p>{channelTitle}</p>
       </div>
     </div>

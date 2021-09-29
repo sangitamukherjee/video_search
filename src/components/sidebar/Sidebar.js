@@ -44,10 +44,12 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
           <span>I don't know</span>
       </li>
       <hr/>
+      <Link to='/'>
       <li>
         <MdExitToApp size={23}/>
           <span>Exit</span>
       </li>
+      </Link>
       <hr/>
     </nav>
   )

@@ -1,6 +1,6 @@
 {
   "name": "video_search",
-  "homepage": "http://sangitamukherjee.github.io/video_search",
+  "homepage": "https://sangitamukherjee.github.io/Updated_video_search",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,7 +28,7 @@
     "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
+    "build": "react-scripts build",    
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

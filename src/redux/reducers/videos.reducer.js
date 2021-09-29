@@ -5,7 +5,7 @@ import {HOME_VIDEOS_REQUEST, HOME_VIDEOS_SUCCESS, HOME_VIDEOS_FAIL, SEARCHED_VID
 export const homeVideosReducer = (state ={
   videos:[],
   loading:false,
-  nextPageToken:null,
+
   activeCategory:'All',
 
 },action
@@ -18,7 +18,7 @@ switch(type){
     ...state,
     videos:payload.videos,
     loading:false,
-    nextPageToken:payload.nextPageToken,
+
     activeCategory:payload.category,
   }
   case HOME_VIDEOS_FAIL:

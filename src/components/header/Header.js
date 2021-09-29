@@ -43,14 +43,10 @@ const Header = ({handleToggleSidebar}) => {
   <div className='header__icons'>
     <MdNotifications size={28} />
     <MdApps size={28} />
-    <button type="submit">
+    <button varient="btn" onClick={() => history.push('/auth')}>
     <BiLogInCircle size={22}/>
     </button>
   </div>
-
-
-
-
 </div>
   )
 }

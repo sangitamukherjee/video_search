@@ -7,7 +7,8 @@ import LoginScreen from './screens/loginScreen/LoginScreen';
 import WatchScreen from './screens/watchScreen/WatchScreen';
 import SearchScreen from './screens/searchScreen/SearchScreen';
 
-import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
+
+import { BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import './_app.scss';
 
 
@@ -42,8 +43,11 @@ const App = () => {
          </Route>
 
          <Route path='/auth'>
+          <Layout>
             <LoginScreen/>
+            </Layout>
          </Route>
+
          <Route path='/search/:query'>
             <Layout>
                <SearchScreen/>
@@ -55,12 +59,12 @@ const App = () => {
                <WatchScreen />
             </Layout>
          </Route>
+
          <Route>
             <Redirect to='/' />
          </Route>
-
       </Switch>
-    </Router>
+      </Router>
    )
 }
 export default App;

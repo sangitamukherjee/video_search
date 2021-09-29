@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './_watchScreen.scss';
 import { useParams } from 'react-router-dom';
 
 const WatchScreen = () => {

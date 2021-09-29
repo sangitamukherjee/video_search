@@ -1,8 +1,12 @@
 import React from 'react';
+
 import './_loginScreen.scss';
 
 const LoginScreen = () =>{
+
+
   return(
+
     <div className='login'>
          <div className='login__container'>
             <h2>Video Search</h2>
@@ -14,6 +18,7 @@ const LoginScreen = () =>{
             <p>This Project is made using YOUTUBE DATA API</p>
          </div>
       </div>
+
   )
 }
 export default LoginScreen;

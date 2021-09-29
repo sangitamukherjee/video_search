@@ -13,15 +13,12 @@ export const getPopularVideos = () => async dispatch =>{
             chart: 'mostPopular',
             regionCode: 'AU',
             maxResults: 20,
-            pageToken: '',
          },
       })
       dispatch({
          type: HOME_VIDEOS_SUCCESS,
          payload: {
             videos: data.items,
-            nextPageToken: data.nextPageToken,
-            category:'All',
 
          },
       })
@@ -34,7 +31,7 @@ export const getPopularVideos = () => async dispatch =>{
 
    }
 }
-export const getVideosByCategory = (keyword) => async (dispatch, getState) =>{
+export const getVideosByCategory = (keyword) => async (dispatch) =>{
   try {
       dispatch({
          type: HOME_VIDEOS_REQUEST,
@@ -43,7 +40,6 @@ export const getVideosByCategory = (keyword) => async (dispatch, getState) =>{
          params: {
             part: 'snippet',
             maxResults: 20,
-            pageToken: getState().homeVideos.nextPageToken,
             q:keyword,
             type:'video',
          },
@@ -52,8 +48,6 @@ export const getVideosByCategory = (keyword) => async (dispatch, getState) =>{
          type: HOME_VIDEOS_SUCCESS,
          payload: {
             videos: data.items,
-            nextPageToken: data.nextPageToken,
-            category:keyword,
 
          },
       })
@@ -63,7 +57,6 @@ export const getVideosByCategory = (keyword) => async (dispatch, getState) =>{
          type: HOME_VIDEOS_FAIL,
          payload: error.message,
       })
-
    }
 }
 
