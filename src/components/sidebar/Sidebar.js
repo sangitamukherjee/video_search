@@ -23,7 +23,6 @@ const Sidebar = ({sidebar, handleToggleSidebar}) => {
           <span>Home</span>
       </li>
       </Link>
-
       <li>
         <MdSubscriptions size={23}/>
           <span>Subscriptions</span>

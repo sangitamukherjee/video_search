@@ -6,6 +6,7 @@ import {homeVideosReducer, searchedVideosReducer } from './reducers/videos.reduc
 const rootReducer = combineReducers({
   homeVideos: homeVideosReducer,
   searchedVideos: searchedVideosReducer,
+
 })
 
 const store = createStore(

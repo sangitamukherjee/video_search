@@ -14,10 +14,6 @@ const SearchScreen = () => {
     dispatch(getVideosBySearch(query))
   },[query, dispatch])
 
-
-
-
-
   const{videos, loading} = useSelector(state => state.searchedVideos)
   return(
     <Container>
@@ -26,12 +22,10 @@ const SearchScreen = () => {
         videos?.map(video => (
           <SearchItem video = {video} key={video.id.videoId} SearchScreen/>
         ))
-
       ):<h1>loading....</h1>
       }
 
     </Container>
-
   )
 }
 export default SearchScreen;

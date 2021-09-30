@@ -1,13 +1,8 @@
-import {HOME_VIDEOS_REQUEST, HOME_VIDEOS_SUCCESS, HOME_VIDEOS_FAIL, SEARCHED_VIDEO_REQUEST, SEARCHED_VIDEO_SUCCESS, SEARCHED_VIDEO_FAIL} from '../actionType';
-
-
+import { HOME_VIDEOS_REQUEST, HOME_VIDEOS_SUCCESS, HOME_VIDEOS_FAIL, SEARCHED_VIDEO_REQUEST, SEARCHED_VIDEO_SUCCESS, SEARCHED_VIDEO_FAIL} from '../actionType';
 
 export const homeVideosReducer = (state ={
   videos:[],
   loading:false,
-
-  activeCategory:'All',
-
 },action
 ) => {
 const {type, payload} = action
@@ -18,8 +13,6 @@ switch(type){
     ...state,
     videos:payload.videos,
     loading:false,
-
-    activeCategory:payload.category,
   }
   case HOME_VIDEOS_FAIL:
     return {

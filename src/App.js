@@ -8,6 +8,7 @@ import WatchScreen from './screens/watchScreen/WatchScreen';
 import SearchScreen from './screens/searchScreen/SearchScreen';
 
 
+
 import { BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import './_app.scss';
 
@@ -59,7 +60,6 @@ const App = () => {
                <WatchScreen />
             </Layout>
          </Route>
-
          <Route>
             <Redirect to='/' />
          </Route>

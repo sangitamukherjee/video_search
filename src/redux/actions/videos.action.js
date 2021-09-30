@@ -1,4 +1,4 @@
-import {HOME_VIDEOS_REQUEST, HOME_VIDEOS_SUCCESS, HOME_VIDEOS_FAIL, SEARCHED_VIDEO_REQUEST, SEARCHED_VIDEO_SUCCESS, SEARCHED_VIDEO_FAIL} from '../actionType';
+import { HOME_VIDEOS_REQUEST, HOME_VIDEOS_SUCCESS, HOME_VIDEOS_FAIL, SEARCHED_VIDEO_REQUEST, SEARCHED_VIDEO_SUCCESS, SEARCHED_VIDEO_FAIL} from '../actionType';
 import request from '../../api';
 
 
@@ -71,7 +71,7 @@ export const getVideosBySearch = keyword => async (dispatch) =>{
             maxResults: 20,
 
             q:keyword,
-            type:'video, channel',
+            type:'video',
          },
       })
       dispatch({
